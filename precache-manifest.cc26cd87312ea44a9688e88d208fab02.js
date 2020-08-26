@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5acf370dc6b569c7d5eda8da1e5faf1b",
+    "revision": "4e6d644ac6aa8924d021f105892bf4be",
     "url": "/Studio-Ghibli/index.html"
   },
   {
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Studio-Ghibli/static/css/5.d19cd460.chunk.css"
   },
   {
-    "revision": "8a9063ae984518e326a9",
+    "revision": "5caa10dbc52c0ceda2b0",
     "url": "/Studio-Ghibli/static/css/main.c2e4ec5f.chunk.css"
   },
   {
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Studio-Ghibli/static/js/6.0db8b219.chunk.js"
   },
   {
-    "revision": "8a9063ae984518e326a9",
-    "url": "/Studio-Ghibli/static/js/main.ab181fc4.chunk.js"
+    "revision": "5caa10dbc52c0ceda2b0",
+    "url": "/Studio-Ghibli/static/js/main.5abfee82.chunk.js"
   },
   {
     "revision": "8602d4b0c9b7826eac6b",
