@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4e6d644ac6aa8924d021f105892bf4be",
+    "revision": "7a57dfc31f64ede33d7311422d9ba3f6",
     "url": "/Studio-Ghibli/index.html"
   },
   {
