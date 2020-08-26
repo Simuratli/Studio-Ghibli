@@ -1,26 +1,66 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{Suspense} from 'react'
+import './App.scss'
+import {HashRouter,Switch,Route} from 'react-router-dom'
+import Navbar from './components/navbar/navbar.component'
+import Loader from './components/Loader/Loader'
+import Movie from './pages/Movie'
+const Index = React.lazy(()=>{
+  return import('./pages/Index')
+})
 
-function App() {
+const About = React.lazy(()=>{
+  return import('./pages/about')
+})
+
+const Locations = React.lazy(()=>{
+  return import('./pages/Locations')
+})
+
+
+
+const Movies = React.lazy(()=>{
+  return import('./pages/Movies')
+})
+
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <HashRouter basename="/Studio-Ghibli">
+    <Navbar/>
+      <Switch>
+        <Route exact path='/' render={()=>{
+          return (
+            <Suspense fallback={<Loader/>}>
+                <Index/>
+            </Suspense>
+          )
+        }}  />
+
+        <Route exact path='/movies' render={()=>{
+          return (
+            <Suspense fallback={<Loader/>}>
+                <Movies/>
+            </Suspense>
+          )
+        }}  />
+        <Route exact path='/location' render={()=>{
+          return (
+            <Suspense fallback={<Loader/>}>
+                <Locations/>
+            </Suspense>
+          )
+        }}  /> 
+        <Route exact path='/movie/:id' component={Movie}   />
+        <Route exact path='/about' render={()=>{
+          return (
+            <Suspense fallback={<Loader/>}>
+                <About/>
+            </Suspense>
+          )
+        }}   />
+      </Switch>
+    </HashRouter>
+  )
 }
 
-export default App;
+export default App

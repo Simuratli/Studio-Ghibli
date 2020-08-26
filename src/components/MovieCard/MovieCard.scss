@@ -1,0 +1,56 @@
+.movie-card{
+    width: 100%;
+    padding:30px 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    position: static;
+    z-index: 20;
+    transition: height 1s ease;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+}
+.movie-card a{
+    color: white;
+}
+.movie-card span{
+    color: rgb(216, 216, 216);
+}
+.movie-card h3,h4{
+    padding: 10px 0;
+    
+}
+
+.panel{
+    height: 0;
+    overflow: hidden;
+}
+
+.openInfo{
+    height: auto;
+    
+}
+
+.movie-header{
+    display: flex;
+    justify-content: space-between;
+}
+.movie-button{
+    font-size: 30px;
+    color: skyblue;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.movie-button:focus{
+    outline: none;
+}
+
+.desc{
+    padding: 10px 0;
+    border-radius: 5px;
+}
+.movie-header{
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.movies{
+    padding: 70px 0 ;
+    height:80vh;
+    width: 100%;
+    overflow-y: scroll;
+    position: relative;
+    top: 60px;
+    
+    
+}
+.movies::-webkit-scrollbar{
+    width: 20px;
+}
+.movies a{
+    text-decoration: none;
+    color: black;
+}
+.year{
+    color: rgb(82, 82, 82);
+}
